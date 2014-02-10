@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="250dp"
+    android:orientation="vertical"
+    android:background="@color/seateasybackground"
+     >
+    <TextView 
+        android:id="@+id/reservationListText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reservation_list"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:background="@color/seateasycolor"/>
+    <Button 
+        android:id="@+id/addReservation"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/little_plus"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/reservationListText"/>
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_reservation"
+        android:textColor="@color/white"
+        android:background="@color/seateasybackground"
+        android:textSize="14sp" 
+        android:layout_toRightOf="@+id/addReservation"
+        android:layout_below="@+id/reservationListText"
+        android:layout_marginTop="5dp"/>
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="400dp"
+        android:layout_height="230dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:background="@drawable/reservation_list"
+        android:layout_below="@+id/addReservation">
+    </ListView>
+
+</RelativeLayout>

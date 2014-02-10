@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:layout_gravity="center"
+    android:background="@drawable/main_background"
+    >  
+    <TextView 
+        android:id="@+id/choice_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="Test Options"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="75dp"
+        /> 
+<Button
+    android:id="@+id/controller" 
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:text="Controller"
+    android:layout_below="@+id/choice_text"
+    android:layout_marginTop="10dp"
+    android:layout_gravity="center"
+    android:layout_marginLeft="100dp"/>
+
+<Button
+    android:id="@+id/tester" 
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:text="Tester"
+    android:layout_below="@+id/controller"
+    android:layout_marginTop="10dp"
+    android:layout_gravity="center"
+    android:layout_marginLeft="100dp"/>
+
+
+</RelativeLayout>

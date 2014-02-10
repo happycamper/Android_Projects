@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+<ImageView
+    android:id="@+id/tableSurface"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:scaleType="matrix"
+    android:background="@drawable/new_rect_edit"
+    android:minWidth="40dp"
+    android:minHeight="40dp"
+    android:state_selected="false"
+    />
+<TextView
+    android:id="@+id/tableNumberText"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:text="@string/table"
+    android:textColor="#000000"
+    android:textSize="14sp"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+     />
+<TextView
+    android:id="@+id/tableNumberSeats"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:text="@string/seats"
+    android:textColor="#000000"
+    android:textSize="12sp"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_below="@+id/tableNumberText"
+     />
+
+</RelativeLayout>

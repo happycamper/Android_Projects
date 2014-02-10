@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/main_background"
+    >   
+<Button
+        android:id="@+id/startaccel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+         />
+    <Button 
+        android:layout_width="wrap_content" 
+        android:text="Stop" 
+        android:id="@+id/stopaccel" 
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/startaccel">
+    </Button>
+	<Button
+        android:id="@+id/calibrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calibrate"
+        android:layout_toRightOf="@+id/stopaccel"
+        android:layout_alignParentRight="true" />
+	
+	<TextView android:id="@+id/display" 
+	android:text="What to display"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"
+	android:layout_below="@+id/startaccel">
+	</TextView>
+	
+<TextView android:id="@+id/accelvalues" 
+	android:text="Accelerometer Values"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"
+	android:layout_below="@+id/display"
+	android:textSize="12sp">
+	</TextView>
+	
+     <TextView android:id="@+id/calibratepos" 
+	android:text="Calibrated Position"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"
+	android:layout_below="@+id/display"
+	android:layout_toRightOf="@+id/accelvalues"
+	android:layout_marginLeft="20dp"
+	android:textSize="12sp">
+	</TextView>
+
+<CheckBox android:text="Check to track point" 
+    android:id="@+id/CheckBox01" 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/accelvalues"
+    android:layout_marginTop="250dp">
+</CheckBox>
+<TextView android:id="@+id/point" 
+	android:text=""
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"
+	android:layout_below="@+id/CheckBox01">
+	</TextView>
+<EditText 
+    android:id="@+id/Theta" 
+    android:layout_width="100dp" 
+    android:layout_height="wrap_content"
+    android:hint="Theta"
+    android:layout_below="@+id/point">
+</EditText>
+<EditText  
+    android:id="@+id/Phi" 
+    android:layout_width="100dp" 
+    android:layout_height="wrap_content"
+    android:hint="Phi"
+    android:layout_toRightOf="@+id/Theta"
+    android:layout_below="@+id/point">
+</EditText>
+<Button
+        android:id="@+id/getthetaphi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insert" 
+        android:layout_below="@+id/point"
+        android:layout_toRightOf="@+id/Phi"/>
+<Button
+    android:id="@+id/serverOverride"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Server Override"
+    android:layout_below="@+id/accelvalues"
+    android:layout_toRightOf="@+id/CheckBox01"
+    android:layout_marginTop="250dp" />
+
+</RelativeLayout>

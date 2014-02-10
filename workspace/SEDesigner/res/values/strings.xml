@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, SEDesignerActivity!</string>
+    <string name="app_name">SEDesigner</string>
+    <string name="table">Table</string>
+    <string name="seats">Seats</string>
+    <string name="dialog_title">Edit Table Properties</string>
+    <string name="actions_dialog_title">Table Actions</string>
+    <string name="Delete">Delete</string>
+    <string name="Copy">Copy</string>
+    <string name="Cancel">Cancel</string>
+    <string name="ScaleX">Scale X</string>
+    <string name="ScaleY">Scale Y</string>
+    <string name="Save">Save</string>
+    <string name="numOfSeats">Number of Seats</string>
+    <string name="tableNumber">Table Number</string>
+    <string name="Close">Close</string>
+    <string name="Rotate">Rotate</string>
+    <string name="SMS">SMS</string>
+    <string name="setWaitTime">Set Wait Time</string>
+    <string name="waitTime">Wait Time</string>
+    <string name="minutes">Minutes</string>
+    <string name="send_party_to_table">Send Party to Table</string>
+    <string name="reservation_list">Reservation List</string>
+    <string name="seated_list">Seated List</string>
+    <string name="layout_selection">Layout Selection</string>
+    <string name="add_reservation">Add Reservation</string>
+    
+    
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="seateasycolor">#FF3b53a4</color>
+    <color name="seateasybackground">#FF2c2d2d</color>
+    <color name="graybackgroundfragment">#FFAAAAAA</color>
+
+</resources>
