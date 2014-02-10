@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Copy 2 elements to &apos;RSBeam/src/jensen.research.pharandroid&apos;&#x0A;- Original project: &apos;gps_example&apos;&#x0A;- Destination element: &apos;RSBeam/src/jensen.research.pharandroid&apos;&#x0A;- Original elements:&#x0A;     com.example.gps_example.GPSclient.java&#x0A;     com.example.gps_example.GPSserver.java" description="Copy compilation units" destination="=RSBeam/src&lt;jensen.research.pharandroid" element1="/src&lt;com.example.gps_example{GPSclient.java" element2="/src&lt;com.example.gps_example{GPSserver.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1380733722989" units="2" version="1.0"/>
-</session>
