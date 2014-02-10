@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    >   
+<TextView android:id="@+id/display" 
+	android:text="What to display"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content">
+	</TextView>
+<TextView android:id="@+id/accelvalues" 
+	android:text="Accelerometer Values"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content">
+	</TextView>
+<Button
+        android:id="@+id/startaccel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Accel" />
+    <Button android:layout_width="wrap_content" android:text="Stop Accel" android:id="@+id/stopaccel" android:layout_height="wrap_content"></Button>
+	<Button
+        android:id="@+id/calibrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calibrate Position" />
+     <TextView android:id="@+id/calibratepos" 
+	android:text="Calibrated Position"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content">
+	</TextView>
+
+<CheckBox android:text="Check to track point" android:id="@+id/CheckBox01" android:layout_width="wrap_content" android:layout_height="wrap_content"></CheckBox>
+<TextView android:id="@+id/point" 
+	android:text=""
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content">
+	</TextView>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="500dp"
+    android:layout_height="150dp"
+    android:orientation="vertical"
+    android:background="@color/seateasybackground"
+     >
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/layout_selection"
+        android:textSize="28sp"
+        android:textColor="@color/white"
+        android:paddingLeft="5dp"
+        android:background="@color/seateasycolor"
+        />
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:paddingTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp">
+    </ListView>
+
+</LinearLayout>

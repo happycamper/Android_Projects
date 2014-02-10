@@ -1,0 +1,57 @@
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="600dp"
+        android:layout_height="600dp"
+        android:background="@color/seateasybackground" >
+        <TextView 
+            android:id="@+id/statisticHeader"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/current_statistics"
+            android:textSize="28sp"
+            android:background="@color/seateasycolor"
+            android:textColor="@color/white"/>
+        <TextView 
+            android:id="@+id/statisticTotalCountHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_seated"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:layout_below="@+id/statisticHeader"
+            android:layout_marginTop="50dp"/>
+        <TextView 
+            android:id="@+id/statisticTotalCountNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:layout_below="@+id/statisticHeader"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"/>
+        <TextView 
+            android:id="@+id/statisticTwoAverageWaitHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/two_average_wait"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:layout_below="@+id/statisticHeader"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="100dp"
+            android:layout_toRightOf="@+id/statisticTotalCountNumber"/>
+        <TextView 
+            android:id="@+id/statisticTwoAverageWait"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:layout_below="@+id/statisticHeader"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="150dp"
+            android:layout_toRightOf="@+id/statisticTotalCountNumber"/>
+        
+
+    </RelativeLayout>

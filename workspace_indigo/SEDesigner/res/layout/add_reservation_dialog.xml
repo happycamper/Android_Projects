@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/addReservationFirstname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Firstname" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/addReservationLastname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addReservationFirstname"
+        android:ems="10"
+        android:hint="LastName" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/addReservationPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addReservationLastname"
+        android:ems="10"
+        android:hint="Phone Number" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/addReservationPartyOf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addReservationPhone"
+        android:ems="10"
+        android:hint="Party Of" >
+    </EditText>
+    <TextView 
+       android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/reservation_time"
+        android:textSize="16sp" 
+        android:layout_below="@+id/addReservationPartyOf"/>
+    <TimePicker
+        android:id="@+id/timePickerReservation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addReservationPartyOf"
+         />
+    <Spinner
+        android:id="@+id/reservationTypeSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timePickerReservation"
+         />
+
+    <Button
+        android:id="@+id/addReservationSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reservationTypeSpinner"
+        android:layout_marginTop="10dp"
+        android:text="@string/Save" />
+
+    <Button
+        android:id="@+id/addReservationCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reservationTypeSpinner"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/addReservationSubmit"
+        android:text="@string/Cancel" />
+
+</RelativeLayout>

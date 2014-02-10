@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <EditText
+        android:id="@+id/user_login_firstnameEdit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/first"
+        />
+    <EditText
+        android:id="@+id/user_login_lastnameEdit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/last"
+        android:layout_below="@+id/user_login_firstnameEdit"
+        />
+    <EditText
+        android:id="@+id/user_login_pass1Edit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="@string/password"
+        android:layout_below="@+id/user_login_lastnameEdit"
+        />
+    <EditText
+        android:id="@+id/user_login_pass2Edit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="@string/re_enter_password"
+        android:layout_below="@+id/user_login_pass1Edit"
+        />
+    <EditText
+        android:id="@+id/user_login_phoneEdit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/phone"
+        android:layout_below="@+id/user_login_pass2Edit"
+        />
+    <EditText
+        android:id="@+id/user_login_emailEdit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:layout_below="@+id/user_login_phoneEdit"
+        />
+    <Button
+        android:id="@+id/user_login_SendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/send"
+        android:layout_below="@+id/user_login_emailEdit"
+        />
+    <Button
+        android:id="@+id/user_login_Cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_login_emailEdit"
+        android:layout_toRightOf="@+id/user_login_SendButton"
+        android:text="@string/Cancel"
+        />
+    
+    
+
+</RelativeLayout>

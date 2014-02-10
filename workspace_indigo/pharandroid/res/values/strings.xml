@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, pharandroid!</string>
+    <string name="app_name">pharandroid</string>
+    <string name="start">Start</string>
+    <string name="server">Configure Server Settings</string>
+    <string name="talk">Camera</string>
+    <string name="trackpoint">Check to track point</string>
+</resources>

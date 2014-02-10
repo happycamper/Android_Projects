@@ -1,0 +1,28 @@
+package proj.seateasy.v1;
+
+import android.app.Activity;
+import android.app.Dialog;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.DialogInterface.OnClickListener;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+public class Main_Page extends Activity {
+	 Context MainContext;
+	 
+	 @Override
+	    public void onCreate(Bundle savedInstanceState) {
+	        super.onCreate(savedInstanceState);
+	        setContentView(R.layout.main);
+	        GetLocationDialog location = null;
+	        location.show(location.getFragmentManager(),"Location");
+	 }
+	 
+	 
+
+
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+       
+        <Button 
+            android:id="@+id/actionDelete"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFFFF"
+            android:text="@string/Delete"
+            android:textSize="16sp"
+            android:textColor="#000000"
+         />
+         <Button 
+            android:id="@+id/actionCopy"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFEEEEEE"
+            android:text="@string/Copy"
+            android:textSize="16sp"
+            android:layout_below="@+id/actionDelete"
+            android:textColor="#000000"
+         />
+         <Button 
+            android:id="@+id/actionCancel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFCCCCCC"
+            android:text="@string/Cancel"
+            android:textSize="16sp"
+            android:layout_below="@+id/actionCopy"
+            android:textColor="#000000"
+         />
+    
+       
+
+    </RelativeLayout>

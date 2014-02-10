@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFFFFFFF" >
+       
+        <TextView 
+            android:id="@+id/seatedReservationName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textSize="16sp"
+            android:textColor="#FF444444"
+            android:text="Reservation Name"
+         />
+        <TextView 
+            android:id="@+id/seatedPartyNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textSize="12sp"
+            android:textColor="#FF999999"
+            android:layout_below="@+id/seatedReservationName"
+            android:text="4"
+         />
+        <TextView
+            android:id="@+id/seatedTime"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:text="Seated Time"
+            android:textSize="10sp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/seatedReservationName"
+            />
+        <TextView
+            android:id="@+id/seatedTable"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:text="@string/tableNumber"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            android:layout_toRightOf="@+id/seatedTime"
+            />
+        <Button 
+            android:id="@+id/completeReservation"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/small_buttons"
+            android:textSize="12sp"
+            android:textColor="#FF999999"
+            android:layout_toRightOf="@+id/seatedTable"
+            android:text="@string/Cancel"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+         />
+        
+         
+    </RelativeLayout>

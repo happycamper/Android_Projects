@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Ftpconnect.java&apos; to &apos;pharandroid/src/jensen.research.pharandroid&apos;&#x0A;- Original project: &apos;ftpupload&apos;&#x0A;- Destination element: &apos;pharandroid/src/jensen.research.pharandroid&apos;&#x0A;- Original element: &apos;heffay.research.ftpupload.Ftpconnect.java&apos;" description="Copy compilation unit" destination="=pharandroid/src&lt;jensen.research.pharandroid" element1="/src&lt;heffay.research.ftpupload{Ftpconnect.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1337219137242" units="1" version="1.0"/>
+</session>

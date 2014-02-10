@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="200dp"
+        android:layout_height="200dp" >
+        
+        <EditText 
+            android:id="@+id/editTableNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Table Number"/>
+        <EditText 
+            android:id="@+id/editTableSeats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTableNumber"
+            android:hint="Number of Seats"/>
+        <Button
+            android:id="@+id/editTableSave"
+            android:layout_width="match_parent" 
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTableSeats"
+            android:text="Save" />
+
+    </RelativeLayout>

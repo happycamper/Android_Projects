@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:textSize="26sp"
+        android:text="@string/hello" />
+    
+    <ImageButton
+    android:id="@+id/ImageButton01"
+    android:layout_width="96px"
+    android:layout_height="96px"
+    android:src="@drawable/facebook_small" 
+    android:layout_gravity="center"
+    android:layout_margin="20px"
+    android:background="#FFFFFF"/>
+    
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:textSize="35sp"
+        android:text="@string/login_or" />
+    
+    <ImageButton
+    android:id="@+id/ImageButton02"
+    android:layout_width="170px"
+    android:layout_height="76px"
+    android:src="@drawable/email_small" 
+    android:layout_gravity="center"
+    android:layout_margin="20px"
+    android:background="#FFFFFF"/>
+    
+    <TextView 
+        android:id="@+id/logintest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hint"
+        />
+
+</LinearLayout>

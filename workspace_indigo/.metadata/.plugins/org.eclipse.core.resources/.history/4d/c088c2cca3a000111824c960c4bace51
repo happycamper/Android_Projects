@@ -1,0 +1,166 @@
+package com.seniordesign.david;
+
+
+
+
+
+import android.app.Activity;
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
+import android.os.Bundle;
+import android.os.Handler;
+import android.preference.PreferenceManager;
+import android.view.View;
+import android.view.WindowManager;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.Button;
+import android.widget.SeekBar;
+import android.widget.TextView;
+import at.abraxas.amarino.Amarino;
+import at.abraxas.amarino.AmarinoIntent;
+
+public class speedcontrol extends Activity {
+	
+	private static final String DEVICE_ADDRESS =  "00:11:12:30:10:63";
+	
+	private static final String BRIGHTNESS_PREFERENCE_KEY = "brightness";
+    private View brightnessPanel;
+    private SeekBar brightnessControl;
+    private TextView displaytext;
+    private TextView speedctrl;
+    private TextView temp;
+    private int brightness = 50;
+    private Handler mHandler = new Handler();
+    
+    private ArduinoReceiver arduinoReceiver = new ArduinoReceiver();
+    /** Called when the activity is first created. */
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main);
+        brightnessPanel = findViewById(R.id.panel);
+        brightnessControl = (SeekBar) findViewById(R.id.seek);
+        displaytext = (TextView) findViewById(R.id.display);
+        speedctrl = (TextView) findViewById(R.id.speedcontrol);
+        temp = (TextView) findViewById(R.id.temperature);
+        Button btn = (Button) findViewById(R.id.Button01);
+        Button btn2 = (Button) findViewById(R.id.Button02);
+        
+        btn2.setOnClickListener(new View.OnClickListener() {
+        	@Override
+        	public void onClick(View v) {
+        		hideBrightnessPanel();
+        	}
+        });
+        
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //showBrightnessPanel();
+            	Amarino.sendDataToArduino(speedcontrol.this,DEVICE_ADDRESS, '~',"\0\u0004\u0008\u0052\u0048\u0056\u0007");
+            	Amarino.sendDataToArduino(speedcontrol.this,DEVICE_ADDRESS, '~',"\0\u0004\u0008\u007F\u0048\u0056\u00DA");
+            }
+        });
+        
+        
+        brightnessControl
+        .setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            public void onProgressChanged(SeekBar seekBar,
+                    int progress, boolean fromUser) {
+                setBrightness(progress);
+            }
+
+            public void onStartTrackingTouch(SeekBar seekBar) {
+            }
+
+            public void onStopTrackingTouch(SeekBar seekBar) {
+               // hideBrightnessPanel();
+            }
+        });
+    }
+    
+    @Override
+    protected void onStart(){
+    	super.onStart();
+    	registerReceiver(arduinoReceiver, new IntentFilter(AmarinoIntent.ACTION_RECEIVED));
+    }
+    
+    @Override
+    protected void onStop(){
+    	super.onStop();
+    	unregisterReceiver(arduinoReceiver);
+    }
+    
+    
+    
+    private void showBrightnessPanel() {
+        Animation animation = AnimationUtils.loadAnimation(this,
+                android.R.anim.slide_in_left);
+        brightnessControl.setProgress(this.brightness);
+        brightnessPanel.setVisibility(View.VISIBLE);
+        brightnessPanel.startAnimation(animation);
+    }
+
+    private void setBrightness(int value) {
+       /* if (value < 10) {
+            value = 10;
+        } else if (value > 100) {
+            value = 100;
+        }*/
+    	//int arduino = value*2;
+    	speedctrl.setText("Speed Control: "+value);
+    	Amarino.sendDataToArduino(speedcontrol.this,DEVICE_ADDRESS, 'B',value);
+        brightness = value;
+        WindowManager.LayoutParams lp = getWindow().getAttributes();
+        lp.screenBrightness = (float) value / 100;       
+        lp.flags |= WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON;
+        getWindow().setAttributes(lp);
+    }
+
+    private void hideBrightnessPanel() {
+        Animation animation = AnimationUtils.loadAnimation(speedcontrol.this,
+                android.R.anim.slide_out_right);
+        brightnessPanel.startAnimation(animation);
+        brightnessPanel.setVisibility(View.GONE);
+        PreferenceManager.getDefaultSharedPreferences(this).edit().putInt(
+                BRIGHTNESS_PREFERENCE_KEY, brightnessControl.getProgress())
+                .commit();
+    }
+    
+    public class ArduinoReceiver extends BroadcastReceiver {
+
+		@Override
+		public void onReceive(Context context, Intent intent) {
+			
+			String data = null;
+			
+			// the device address from which the data was sent, we don't need it here but to demonstrate how you retrieve it
+			final String address = intent.getStringExtra(AmarinoIntent.EXTRA_DEVICE_ADDRESS);
+			
+			// the type of data which is added to the intent
+			final int dataType = intent.getIntExtra(AmarinoIntent.EXTRA_DATA_TYPE, -1);
+			
+			// we only expect String data though, but it is better to check if really string was sent
+			// later Amarino will support differnt data types, so far data comes always as string and
+			// you have to parse the data to the type you have sent from Arduino, like it is shown below
+			if (dataType == AmarinoIntent.STRING_EXTRA){
+				data = intent.getStringExtra(AmarinoIntent.EXTRA_DATA);
+				
+				temp.setText(String.format("%x", data));
+				
+				if (data != null){
+					//mValueTV.setText(data);
+					try {
+						// since we know that our string value is an int number we can parse it to an integer
+						final int sensorReading = Integer.parseInt(data.substring(5,6));
+						
+					} 
+					catch (NumberFormatException e) { /* oh data was not an integer */ }
+				}
+			}
+		}
+	}
+}

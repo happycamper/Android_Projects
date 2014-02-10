@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Seat Easy</string>
+    <string name="app_name">Seat Easy</string>
+    <string name="login_or">- OR -</string>
+    <string name="fblogon">Facebook Logon Screen</string>
+    <string name="LocationToast">Seat Easy would like to use your location</string>
+    <string name="LocationAllow">Allow</string>
+    <string name="LocationDisable">Disable</string>
+    <string name="DisableReason">Disabling Location may significantly impact the use of this app</string>
+    <string name="ok">Ok</string>
+    <string name="Home">Restaurants</string>
+    <string name="Share">Share</string>
+    <string name="Settings">Settings</string>
+    <string name="Mapit">Map It!</string>
+    <string name="first">First</string>
+    <string name="last">Last</string>
+    <string name="phone">Phone</string>
+    <string name="callahead">Call Ahead</string>
+    <string name="redeem">Redeem</string>
+    <string name="NetworkWarning">Please make sure that you have an active network connection or that the IP address is correct</string>
+    <string name="Retry">Retry</string>
+    <string name="Cancel">Cancel</string>
+    <string name="pref_loc_title">Allow Location Services</string>
+    <string name="pref_loc_summary">Use current location for search results</string>
+    <string name="pref_loc_header">Location</string>
+    <string name="password">Password 8-10 Characters</string>
+    <string name="re_enter_password">Re-Enter Password</string>
+    <string name="email">Email</string>
+    <string name="clear">Clear</string>
+    <string name="callAheadHeader">Call Ahead Form</string>
+    <string name="send">Send</string>
+	
+</resources>

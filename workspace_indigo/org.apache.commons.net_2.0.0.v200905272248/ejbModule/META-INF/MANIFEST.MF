@@ -1,0 +1,461 @@
+Manifest-Version: 1.0
+Bundle-DocURL: http://commons.apache.org/net/
+Implementation-Vendor: The Apache Software Foundation
+Bundle-Localization: plugin
+X-Compile-Target-JDK: 1.5
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Implementation-Vendor-Id: org.apache
+Built-By: Rory
+Bundle-SymbolicName: org.apache.commons.net
+Export-Package: org.apache.commons.net;version="2.0",org.apache.common
+ s.net.bsd;version="2.0",org.apache.commons.net.chargen;version="2.0",
+ org.apache.commons.net.daytime;version="2.0",org.apache.commons.net.d
+ iscard;version="2.0",org.apache.commons.net.echo;version="2.0",org.ap
+ ache.commons.net.finger;version="2.0",org.apache.commons.net.ftp;vers
+ ion="2.0",org.apache.commons.net.ftp.parser;version="2.0",org.apache.
+ commons.net.io;version="2.0",org.apache.commons.net.nntp;version="2.0
+ ",org.apache.commons.net.ntp;version="2.0",org.apache.commons.net.pop
+ 3;version="2.0",org.apache.commons.net.smtp;version="2.0",org.apache.
+ commons.net.telnet;version="2.0",org.apache.commons.net.tftp;version=
+ "2.0",org.apache.commons.net.time;version="2.0",org.apache.commons.ne
+ t.util;version="2.0",org.apache.commons.net.whois;version="2.0"
+Bundle-Version: 2.0.0.v200905272248
+X-Compile-Source-JDK: 1.5
+Specification-Version: 2.0
+Specification-Title: Commons Net
+Bundle-Description: %bundleDesc
+Specification-Vendor: The Apache Software Foundation
+Build-Jdk: 1.5.0_04
+Bundle-Vendor: %providerName
+Bundle-Name: %pluginName
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Implementation-Title: Commons Net
+Implementation-Version: 2.0
+Import-Package: javax.net,javax.net.ssl,org.apache.commons.net;version
+ ="2.0",org.apache.commons.net.bsd;version="2.0",org.apache.commons.ne
+ t.chargen;version="2.0",org.apache.commons.net.daytime;version="2.0",
+ org.apache.commons.net.discard;version="2.0",org.apache.commons.net.e
+ cho;version="2.0",org.apache.commons.net.finger;version="2.0",org.apa
+ che.commons.net.ftp;version="2.0",org.apache.commons.net.ftp.parser;v
+ ersion="2.0",org.apache.commons.net.io;version="2.0",org.apache.commo
+ ns.net.nntp;version="2.0",org.apache.commons.net.ntp;version="2.0",or
+ g.apache.commons.net.pop3;version="2.0",org.apache.commons.net.smtp;v
+ ersion="2.0",org.apache.commons.net.telnet;version="2.0",org.apache.c
+ ommons.net.tftp;version="2.0",org.apache.commons.net.time;version="2.
+ 0",org.apache.commons.net.util;version="2.0",org.apache.commons.net.w
+ hois;version="2.0"
+Bundle-ManifestVersion: 2
+
+Name: org/apache/commons/net/ProtocolCommandListener.class
+SHA1-Digest: ZV8NVD1ko6ks/7NAcxxerRR6cl0=
+
+Name: org/apache/commons/net/daytime/DaytimeUDPClient.class
+SHA1-Digest: Use5EtY07qMufc1rfoya/5XvHfU=
+
+Name: org/apache/commons/net/telnet/InvalidTelnetOptionException.class
+SHA1-Digest: MR2QGsJDlNq945MC2R63MZO3DA8=
+
+Name: org/apache/commons/net/telnet/TelnetOutputStream.class
+SHA1-Digest: cgY9aY9355xLZoqVw1fBJufsw1c=
+
+Name: org/apache/commons/net/PrintCommandListener.class
+SHA1-Digest: 5cxGK6u1w0Xow8FE5+lj+s1ptE0=
+
+Name: org/apache/commons/net/ftp/parser/VMSVersioningFTPEntryParser.cl
+ ass
+SHA1-Digest: bwYQoJTicXsjrNuyf91WxjWCRTA=
+
+Name: org/apache/commons/net/nntp/NNTPConnectionClosedException.class
+SHA1-Digest: opuP2hXLHpJdenSXOJ9UND81wuY=
+
+Name: org/apache/commons/net/io/DotTerminatedMessageWriter.class
+SHA1-Digest: BxsCDOfTWAk5fXQrAV7ci0L9DVQ=
+
+Name: org/apache/commons/net/ftp/parser/DefaultFTPFileEntryParserFacto
+ ry.class
+SHA1-Digest: WyUFBemyS2LmDoXQWczWpiQ9XUY=
+
+Name: org/apache/commons/net/smtp/SMTPCommand.class
+SHA1-Digest: eP1mXPjzXtSupkLTiLqUh3HpjuA=
+
+Name: org/apache/commons/net/io/SocketOutputStream.class
+SHA1-Digest: z5BdCXHmgpIRvOnjMbZ34/KOEoc=
+
+Name: org/apache/commons/net/daytime/DaytimeTCPClient.class
+SHA1-Digest: RzPJA5HMTqZtKp3sKPWoj37erEs=
+
+Name: org/apache/commons/net/ntp/NtpV3Packet.class
+SHA1-Digest: XiLTO8Wtng76JFx0iD7ahvLhtWY=
+
+Name: org/apache/commons/net/io/Util.class
+SHA1-Digest: N+h9AQUrGksa9l6+i7iLYXdRSok=
+
+Name: org/apache/commons/net/smtp/SimpleSMTPHeader.class
+SHA1-Digest: N6XIFw10gHrXktQd+UK3sScWvn8=
+
+Name: org/apache/commons/net/ftp/FTPConnectionClosedException.class
+SHA1-Digest: hqwDL6R//8hbaGLepLSBrpgtnWc=
+
+Name: org/apache/commons/net/io/CopyStreamException.class
+SHA1-Digest: SnFjqoPt4HIeIhHSEsCrxuR2S7I=
+
+Name: org/apache/commons/net/ftp/parser/MVSFTPEntryParser.class
+SHA1-Digest: NuPmu9yA2rx/VY+M86ykQExsGto=
+
+Name: org/apache/commons/net/ftp/parser/FTPTimestampParserImpl.class
+SHA1-Digest: Rwd80Yry7wCNeGS0BYpzDJtN65M=
+
+Name: org/apache/commons/net/DatagramSocketFactory.class
+SHA1-Digest: HI4TQba8rNpiQKn3HaeO93etwOA=
+
+Name: org/apache/commons/net/ftp/parser/OS2FTPEntryParser.class
+SHA1-Digest: UOKmFkc4kip799pqvdh4myclKRE=
+
+Name: org/apache/commons/net/telnet/TelnetCommand.class
+SHA1-Digest: alR4/NKYMPV5UUC9mmQxgayzbEo=
+
+Name: org/apache/commons/net/ftp/parser/OS400FTPEntryParser.class
+SHA1-Digest: S4oScPoKJBrAwP6UdAqVHeHQb0Q=
+
+Name: org/apache/commons/net/pop3/POP3Client.class
+SHA1-Digest: euj+Mz5V4xFvTohJw32LuM+lNtI=
+
+Name: org/apache/commons/net/ftp/FTPFileEntryParser.class
+SHA1-Digest: /bDs4nBuirGzF9wHbdT6d03vqVc=
+
+Name: org/apache/commons/net/chargen/CharGenUDPClient.class
+SHA1-Digest: HcyoSP4Em9b/DDB0EsjaCwhL74A=
+
+Name: org/apache/commons/net/ntp/NTPUDPClient.class
+SHA1-Digest: ZWltsAcI4p/tNEBdL70MC1PU3Gg=
+
+Name: org/apache/commons/net/ntp/NtpUtils.class
+SHA1-Digest: EDA6DACp/Gw6OAXVdm/JNb3M194=
+
+Name: org/apache/commons/net/ftp/parser/ConfigurableFTPFileEntryParser
+ Impl.class
+SHA1-Digest: cmC+knV+IxiHzl9h1zDZXbMqGrY=
+
+Name: org/apache/commons/net/tftp/TFTPReadRequestPacket.class
+SHA1-Digest: MknkLzvwQvCue8nH01R8snc5FPg=
+
+Name: org/apache/commons/net/telnet/TerminalTypeOptionHandler.class
+SHA1-Digest: HCcg3vPmWOtBQkP73FNeaxHXRFo=
+
+Name: org/apache/commons/net/bsd/RExecClient.class
+SHA1-Digest: DI90qhlWExrA5mmI9N//iPJHKSU=
+
+Name: org/apache/commons/net/ftp/FTP.class
+SHA1-Digest: Q8nNwPKNpJEnO0gJif/+fgZnuos=
+
+Name: org/apache/commons/net/ftp/FTPSSocketFactory.class
+SHA1-Digest: zM10yBwqWH2W0ClRawMW8LuHBYk=
+
+Name: org/apache/commons/net/nntp/NNTPClient.class
+SHA1-Digest: zqLj6RPX6PAizBz56y8AzdeQ4P8=
+
+Name: org/apache/commons/net/nntp/NNTPCommand.class
+SHA1-Digest: 9onNI7FWxHO8UyPl/6UeY3p08h8=
+
+Name: org/apache/commons/net/DatagramSocketClient.class
+SHA1-Digest: FIz5ufkftFRLNXbAyHhGtP1WL34=
+
+Name: org/apache/commons/net/discard/DiscardUDPClient.class
+SHA1-Digest: KVnoDLD2Mba5N9RFR1clB05UcwU=
+
+Name: about_files/LICENSE.txt
+SHA1-Digest: K4uBUimqimHkg/tLoFiLi2xJGJA=
+
+Name: org/apache/commons/net/tftp/TFTPDataPacket.class
+SHA1-Digest: ZcC9rdUV6bQIbL+MQvuMY5CJQsg=
+
+Name: org/apache/commons/net/nntp/ThreadContainer.class
+SHA1-Digest: sG3BdKzc7i/n18HhkBtyH4YtVZo=
+
+Name: org/apache/commons/net/ProtocolCommandEvent.class
+SHA1-Digest: KDWxStXma8m8Bjl32X8l4yp/o8o=
+
+Name: org/apache/commons/net/chargen/CharGenTCPClient.class
+SHA1-Digest: iJ0aB6Muj9fLHAUKfQ2+aD6PXYs=
+
+Name: org/apache/commons/net/tftp/TFTPWriteRequestPacket.class
+SHA1-Digest: V/iL7++B4xqGGBDdaKjd7kgDExI=
+
+Name: org/apache/commons/net/io/DotTerminatedMessageReader.class
+SHA1-Digest: O9Rsgbwr3xUpcbihQxVRNB/fSgI=
+
+Name: org/apache/commons/net/util/SubnetUtils$SubnetInfo.class
+SHA1-Digest: hgg0Jzhn1mAJFWuyqj+r5+j0yjE=
+
+Name: about_files/NOTICE.txt
+SHA1-Digest: 5avDs6ha20TrOJmNSWAeS0Dt2/4=
+
+Name: org/apache/commons/net/ftp/parser/ParserInitializationException.
+ class
+SHA1-Digest: M69PQS4ybIOlaVT0bOHHEgHaT3M=
+
+Name: org/apache/commons/net/nntp/SimpleNNTPHeader.class
+SHA1-Digest: pVyaPOPmn0Qur8Lr7zz/K8pn7C0=
+
+Name: org/apache/commons/net/io/CopyStreamAdapter.class
+SHA1-Digest: t4TFwzRGCIV/Zaphbk6MmPOkb8M=
+
+Name: about.html
+SHA1-Digest: Ra2LkVeCAWsYG+T57IqKxynU9fA=
+
+Name: org/apache/commons/net/telnet/SimpleOptionHandler.class
+SHA1-Digest: bZ4ExB5frPo+uZxfsebl0Z+HG9E=
+
+Name: org/apache/commons/net/tftp/TFTPPacketException.class
+SHA1-Digest: JlD4qWh/M/2T7FaMlEFe9If22/8=
+
+Name: org/apache/commons/net/ftp/parser/FTPTimestampParser.class
+SHA1-Digest: qxU707riBTfGtokbAhENwZhk030=
+
+Name: org/apache/commons/net/smtp/SMTPReply.class
+SHA1-Digest: ZrYvFBmuC6bbcSl2O6PWBW33VYM=
+
+Name: org/apache/commons/net/telnet/TelnetClient.class
+SHA1-Digest: MMmIP4QtcyyOsdv9QBeo98TQTso=
+
+Name: org/apache/commons/net/ftp/parser/UnixFTPEntryParser.class
+SHA1-Digest: OC7EDeyr6YIck7WxockPwxfilVM=
+
+Name: org/apache/commons/net/pop3/POP3Command.class
+SHA1-Digest: /Tp3WTiQbhTiqzJ57X8SKS5aFW0=
+
+Name: org/apache/commons/net/time/TimeUDPClient.class
+SHA1-Digest: zT0LyjNOSUC8EwDrN2mU1wOFi4E=
+
+Name: org/apache/commons/net/echo/EchoUDPClient.class
+SHA1-Digest: H3nPe+UDfmkm4peOaZJahp7U+hI=
+
+Name: org/apache/commons/net/SocketClient.class
+SHA1-Digest: x4bDGsIpi1aKzkZstv46NonofYA=
+
+Name: org/apache/commons/net/discard/DiscardTCPClient.class
+SHA1-Digest: NgE41BGzu0PTapYZKLWeO2ORDq8=
+
+Name: org/apache/commons/net/ftp/FTPClient.class
+SHA1-Digest: cisEK+wNYKgeYvn3rTc7ZR2K0tg=
+
+Name: org/apache/commons/net/nntp/Article.class
+SHA1-Digest: 31qDWCiA9RQ29dMt03amd4FP+xI=
+
+Name: org/apache/commons/net/ntp/NtpV3Impl.class
+SHA1-Digest: s6OMvzIBiFH8wsKTzcMX3q7Kj9I=
+
+Name: org/apache/commons/net/telnet/TelnetOptionHandler.class
+SHA1-Digest: A8QCDUth2L20Q7jeW1Axrk9fpvQ=
+
+Name: org/apache/commons/net/ftp/FTPSClient.class
+SHA1-Digest: JHxgLb+lwuATjlHO6T+oaAeT1n8=
+
+Name: org/apache/commons/net/nntp/Threader.class
+SHA1-Digest: CacBjyCCFrIq2K+UNUFHMsBr5Nk=
+
+Name: org/apache/commons/net/pop3/POP3.class
+SHA1-Digest: dk2fQFUhyzmXNqrsjZ/hR0xyNgA=
+
+Name: org/apache/commons/net/io/ToNetASCIIInputStream.class
+SHA1-Digest: 6xnb5jgdPEU48auYbSXtN9k4fIA=
+
+Name: org/apache/commons/net/io/CopyStreamListener.class
+SHA1-Digest: dONpikqCg7DCZ2TiXX+mskH2Fiw=
+
+Name: org/apache/commons/net/tftp/TFTPPacket.class
+SHA1-Digest: mwZkM0Of35gwR2VxM2uOkQWsaxE=
+
+Name: org/apache/commons/net/ftp/parser/NTFTPEntryParser.class
+SHA1-Digest: lY4fGS95jVpW1/Rnzbm0rniJcq4=
+
+Name: org/apache/commons/net/telnet/TelnetInputStream.class
+SHA1-Digest: VCy8qnbDRJWHLvAisp+cfkWS5Nw=
+
+Name: org/apache/commons/net/tftp/TFTPClient.class
+SHA1-Digest: lqksvJjGNvlewRCv70IFmh81abA=
+
+Name: org/apache/commons/net/smtp/SMTPClient.class
+SHA1-Digest: 4L0GJJd+hB4hFoshdFlTwMJBYQA=
+
+Name: org/apache/commons/net/finger/FingerClient.class
+SHA1-Digest: rPUt6iuMqB2EUwjZDqM0FT2RCa4=
+
+Name: org/apache/commons/net/time/TimeTCPClient.class
+SHA1-Digest: ajDgG/zV3Ci04RKKj8CyMa0YXh4=
+
+Name: org/apache/commons/net/echo/EchoTCPClient.class
+SHA1-Digest: 486YQH/q9MI30JXHI0e6qI/h4SU=
+
+Name: org/apache/commons/net/bsd/RCommandClient.class
+SHA1-Digest: /wgkSc+0fpda6Rr9U7BlRyGkm78=
+
+Name: org/apache/commons/net/telnet/EchoOptionHandler.class
+SHA1-Digest: +0DFhMuwhfVu6HLNmsr6HfyHiLc=
+
+Name: org/apache/commons/net/ftp/FTPClientConfig.class
+SHA1-Digest: TSW0IvXRqCx/tdkO7LDkardSVeA=
+
+Name: org/apache/commons/net/telnet/TelnetOption.class
+SHA1-Digest: xwidWO09oPtNrkZr9V7CVSgCKy4=
+
+Name: org/apache/commons/net/ftp/Configurable.class
+SHA1-Digest: 8k/Qw69hyvHJ86tMxv0PyOBucO4=
+
+Name: org/apache/commons/net/util/SubnetUtils.class
+SHA1-Digest: F3/9fgDOOr+zswivVhvgzqGZebc=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/apache/commons/net/nntp/NNTP.class
+SHA1-Digest: NjoUvy8+MUs1CUK4i6fJIE9RyBA=
+
+Name: org/apache/commons/net/ftp/parser/CompositeFileEntryParser.class
+SHA1-Digest: TRu1ZGs7RBvlu95w+K1rfjY1kQQ=
+
+Name: org/apache/commons/net/ftp/FTPSTrustManager.class
+SHA1-Digest: 9DpL5hAKwDcQqdr0GQ+flkN2OPs=
+
+Name: org/apache/commons/net/DefaultSocketFactory.class
+SHA1-Digest: yJpg4BESL5E9IzLkiC+A9pejFUk=
+
+Name: org/apache/commons/net/telnet/WindowSizeOptionHandler.class
+SHA1-Digest: N9+gGKhZw2ljhKC/8UkbdK3v9LI=
+
+Name: org/apache/commons/net/ftp/parser/RegexFTPFileEntryParserImpl.cl
+ ass
+SHA1-Digest: XroeSeXLL1NtlS8bk1wzeMn0hcI=
+
+Name: org/apache/commons/net/telnet/SuppressGAOptionHandler.class
+SHA1-Digest: uQPb7gydaVCPnVFP3KZ2l9I/e2o=
+
+Name: org/apache/commons/net/nntp/NNTPReply.class
+SHA1-Digest: 609Ac4VyV8pgvuwwxyTpb5VLnFE=
+
+Name: org/apache/commons/net/io/CopyStreamEvent.class
+SHA1-Digest: suSktElpr78CRXsQrwnGwt3XTsc=
+
+Name: org/apache/commons/net/nntp/ArticlePointer.class
+SHA1-Digest: 9yjF5WkWv5sRfa7wjgMdqgAfqTA=
+
+Name: org/apache/commons/net/tftp/TFTPErrorPacket.class
+SHA1-Digest: tSna3ZnjFyeWsB/rN9U2uzLL9rU=
+
+Name: org/apache/commons/net/tftp/TFTPAckPacket.class
+SHA1-Digest: 7l0C1yRzyyxf9NfKNL317so0zRo=
+
+Name: org/apache/commons/net/io/FromNetASCIIInputStream.class
+SHA1-Digest: 1/BjAj2pinL/M8tXqr2v48MZbO0=
+
+Name: org/apache/commons/net/tftp/TFTPRequestPacket.class
+SHA1-Digest: WC3Ph8tAvLFnOCIe4usz0kOXFoY=
+
+Name: org/apache/commons/net/whois/WhoisClient.class
+SHA1-Digest: v6ga5gfNtOOgxRGLoHn6E5hCclI=
+
+Name: org/apache/commons/net/ftp/FTPSCommand.class
+SHA1-Digest: kq9lU+pWLntpAmPief4LkhbHgNY=
+
+Name: org/apache/commons/net/telnet/TelnetNotificationHandler.class
+SHA1-Digest: GyXYOGWNnUS2GtQXN4DC8lUrDtQ=
+
+Name: org/apache/commons/net/telnet/Telnet.class
+SHA1-Digest: 2T/OqqCyb2TEr1uFZdiTGD70c9E=
+
+Name: plugin.properties
+SHA1-Digest: 6WIhqFgMHsKVmYqokDtGrcqILCk=
+
+Name: org/apache/commons/net/ftp/FTPReply.class
+SHA1-Digest: A4558UvlTu9fiexHBdSLn9GFm9k=
+
+Name: org/apache/commons/net/smtp/SMTPConnectionClosedException.class
+SHA1-Digest: mEomSPOAuG56xBsvos+JkykMDnA=
+
+Name: org/apache/commons/net/ftp/parser/VMSVersioningFTPEntryParser$Na
+ meVersion.class
+SHA1-Digest: jvdbG/To7TupuyLAFEX0ZTDsBbQ=
+
+Name: org/apache/commons/net/pop3/POP3Reply.class
+SHA1-Digest: fTVfHAvAZIOpkKkpkV+tGjGEq5E=
+
+Name: org/apache/commons/net/ProtocolCommandSupport.class
+SHA1-Digest: +libsJsg1Hcw/7hXZsHPjRmNeEY=
+
+Name: org/apache/commons/net/MalformedServerReplyException.class
+SHA1-Digest: aEZ5FKTb+fdqn4SaElcs4GIVE2Y=
+
+Name: org/apache/commons/net/ftp/parser/NetwareFTPEntryParser.class
+SHA1-Digest: /zcIkqaGNfilDuebA20/KZZ4VEc=
+
+Name: org/apache/commons/net/nntp/NewsgroupInfo.class
+SHA1-Digest: yUk6kGuJSNLwcRQgrcUwJoyI0Nk=
+
+Name: org/apache/commons/net/ftp/parser/VMSFTPEntryParser.class
+SHA1-Digest: Jx2a69SUykG5QddF8xNYygSTFHQ=
+
+Name: org/apache/commons/net/io/FromNetASCIIOutputStream.class
+SHA1-Digest: MsvJ6D1NEoAt7te/IfqFeonej+c=
+
+Name: org/apache/commons/net/io/SocketInputStream.class
+SHA1-Digest: tyPQg+UiJUvoat1Lh0DvwYkJpA4=
+
+Name: org/apache/commons/net/tftp/TFTP.class
+SHA1-Digest: RVfFGU6Lx9DytTXMrnICq2lZuKA=
+
+Name: org/apache/commons/net/smtp/SMTP.class
+SHA1-Digest: OfRTqV3phg5ECNpzrRwU2FAMAzs=
+
+Name: org/apache/commons/net/ftp/FTPFile.class
+SHA1-Digest: xLUJl/WT+87sF5wlaPNE5XHcb8o=
+
+Name: org/apache/commons/net/nntp/NewGroupsOrNewsQuery.class
+SHA1-Digest: kiX7mtdDSmEwF7ZvIu7L/2/Cku8=
+
+Name: org/apache/commons/net/ntp/TimeStamp.class
+SHA1-Digest: b+AsMfeHjdVG7wRVZajKG/+jvic=
+
+Name: org/apache/commons/net/util/SubnetUtils$1.class
+SHA1-Digest: XlNGe/rWGzj6UGFHMnRa0KytfLs=
+
+Name: org/apache/commons/net/ftp/parser/FTPFileEntryParserFactory.clas
+ s
+SHA1-Digest: gg4GHuA2H9vgK59wqpzQlyVoBSQ=
+
+Name: org/apache/commons/net/DefaultDatagramSocketFactory.class
+SHA1-Digest: FSmBrCZz3sBkSJokhFzyG9Ode3s=
+
+Name: org/apache/commons/net/ftp/FTPCommand.class
+SHA1-Digest: vqqObMzkEwX6MXlj79ZCRFl7www=
+
+Name: org/apache/commons/net/nntp/Threadable.class
+SHA1-Digest: QQrs6kUaezXHIHuZoWuILSWtEc4=
+
+Name: org/apache/commons/net/io/ToNetASCIIOutputStream.class
+SHA1-Digest: nqFRYv3faStSmkMjVI+11QldgdY=
+
+Name: org/apache/commons/net/ftp/parser/EnterpriseUnixFTPEntryParser.c
+ lass
+SHA1-Digest: j4dAiUZi36nP6NvohBOmZGCHVSI=
+
+Name: org/apache/commons/net/smtp/RelayPath.class
+SHA1-Digest: CEaj7uan0Ciqkc/oejo5wCeNq54=
+
+Name: org/apache/commons/net/bsd/RLoginClient.class
+SHA1-Digest: KKFqXmIiQjLo0GDAUserLqZgv4U=
+
+Name: org/apache/commons/net/ftp/FTPFileEntryParserImpl.class
+SHA1-Digest: G2bZnkb2rSRSFBwXiMhw6eD6200=
+
+Name: org/apache/commons/net/ntp/TimeInfo.class
+SHA1-Digest: 84Z4lmYfVCs9mplAlp1wDYFV/4Y=
+
+Name: org/apache/commons/net/util/ListenerList.class
+SHA1-Digest: mymHIezq0qA/PMUW3cNycnS2lCk=
+
+Name: org/apache/commons/net/ftp/FTPListParseEngine.class
+SHA1-Digest: cd2y+VZU2l9ABweDiZtHTOeeQQQ=
+
+Name: org/apache/commons/net/pop3/POP3MessageInfo.class
+SHA1-Digest: x7Fz9TtJ8vL/CrBoey/OG0BScBE=
+

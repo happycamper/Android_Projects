@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="500dp"
+    android:layout_height="200dp"
+    android:orientation="vertical"
+    android:background="@color/seateasybackground"
+     >
+     <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/seated_list"
+        android:textSize="28sp"
+        android:textColor="@color/white"
+        android:background="@color/seateasycolor"
+        android:paddingLeft="5dp"/>
+    
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="460dp"
+        android:layout_height="180dp"
+        android:paddingTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp"
+        android:minWidth="400dp"
+        android:minHeight="250dp"
+        android:background="@drawable/reservation_list"
+        android:layout_marginLeft="20dp">
+    </ListView>
+
+</LinearLayout>

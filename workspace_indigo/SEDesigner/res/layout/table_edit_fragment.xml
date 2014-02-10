@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#33DDDDDD" >
+	<TextView
+	    android:id="@+id/editFragTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/dialog_title"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+    <TextView
+        android:id="@+id/editFragScaleX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/ScaleX"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:layout_below="@+id/editFragTitle" />
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editFragScaleX"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/editFragScaleY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBar1"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/ScaleY"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editFragScaleY"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp" />
+    
+    <TextView
+        android:id="@+id/editFragRotate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBar2"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/Rotate"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+    
+     <SeekBar
+        android:id="@+id/seekBar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editFragRotate"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/editTableNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBar3"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:hint="@string/tableNumber" />
+   
+
+    <EditText
+        android:id="@+id/editTableSeats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTableNumber"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:hint="@string/numOfSeats" />
+
+    <Button
+        android:id="@+id/editTableSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTableSeats"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/Save" />
+
+    <Button
+        android:id="@+id/editTableCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTableSeats"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/editTableSave"
+        android:text="@string/Close" />
+
+</RelativeLayout>

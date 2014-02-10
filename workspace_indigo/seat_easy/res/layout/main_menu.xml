@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="left"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <item android:id="@+id/mainSearch"
+          android:icon="@drawable/search_standard"
+           android:showAsAction="ifRoom|withText"
+           />
+    <item android:id="@+id/menu_Home"
+          android:icon="@drawable/refresh_standard"
+           android:showAsAction="showAlways"
+           />
+    <item android:id="@+id/menu_Share"
+          android:icon="@drawable/gps_standard"
+           android:showAsAction="showAlways"/>
+           
+    <item android:id="@+id/menu_Settings"
+          android:icon="@drawable/settings_standard"
+           android:showAsAction="showAlways"
+           />
+</menu>

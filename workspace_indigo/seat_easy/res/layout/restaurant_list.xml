@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="140dp"
+    android:paddingRight="30dp"
+    android:paddingTop="15dp"
+    android:layout_gravity="center"
+    android:background="@drawable/list_background"
+     >
+    <TextView
+        android:id="@+id/RestaurantName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="restaurant"
+        android:textSize="35sp"
+        android:textColor="#3b53a4"
+        android:layout_gravity="center"
+         />
+
+    <Button
+        android:id="@+id/MapIt"
+        android:layout_width="72px"
+        android:layout_height="72px"
+        android:layout_below="@+id/RestaurantName"
+        android:background="#FFFFFF"
+        android:text="Map It"
+        android:textColor="#3b53a4"
+        android:layout_gravity="center" />
+
+    <Button
+        android:id="@+id/CallAhead"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:text="Call Ahead"
+        android:textColor="#3b53a4"
+        android:layout_toRightOf="@+id/MapIt"
+        android:layout_below="@+id/RestaurantName"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:id="@+id/MyWait"
+        android:layout_width="wrap_content"
+        android:layout_height="72px"
+        android:layout_toRightOf="@+id/CallAhead"
+        android:layout_below="@+id/RestaurantName"
+        android:text="My Wait"
+        android:textSize="15sp" 
+        android:layout_gravity="center"
+        />
+    <ImageButton
+        android:id="@+id/Promotion"
+        android:layout_width="96px"
+        android:layout_height="96px"
+        android:layout_toRightOf="@+id/MyWait"
+        android:layout_below="@+id/RestaurantName"
+        android:src="@drawable/seat_easy_qr"
+        android:layout_gravity="center"
+         />
+    
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+    <TextView
+        android:id="@+id/LocationDialogTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/LocationToast"
+        android:textSize="25sp" />
+    <Button
+        android:id="@+id/LocationAllowButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LocationDialogTitle"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/LocationDisableButton"
+        android:text="@string/LocationAllow" />
+    <Button
+        android:id="@+id/LocationDisableButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LocationDialogTitle"
+        android:layout_alignParentRight="true"
+        android:text="@string/LocationDisable" />
+</RelativeLayout>

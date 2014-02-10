@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="org.apache.commons.net_2.0.0.v200905272248">
+        <wb-resource deploy-path="/" source-path="/ejbModule"/>
+        <wb-resource deploy-path="/" source-path="/ImportedClasses"/>
+        <property name="java-output-path" value="/org.apache.commons.net_2.0.0.v200905272248/build/classes"/>
+    </wb-module>
+</project-modules>

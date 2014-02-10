@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="left"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+           
+    <item android:id="@+id/viewStatistics"
+          android:icon="@drawable/statistic"
+           android:showAsAction="always"
+           />
+     <item android:id="@+id/viewReservations"
+          android:icon="@drawable/lists"
+           android:showAsAction="always"
+           />
+      <item android:id="@+id/viewFloors"
+          android:icon="@drawable/floors"
+           android:showAsAction="always"
+           />
+</menu>

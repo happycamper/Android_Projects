@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <EditText
+        android:id="@+id/firstnameEdit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/first"
+        android:layout_below="@+id/callAheadHeader"
+        />
+    <EditText
+        android:id="@+id/lastnameEdit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/last"
+        android:layout_below="@+id/firstnameEdit"
+        />
+    <EditText
+        android:id="@+id/phoneEdit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/phone"
+        android:layout_below="@+id/lastnameEdit"
+        />
+    <TimePicker
+        android:id="@+id/timePicker1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phoneEdit" />
+    <DatePicker
+        android:id="@+id/datePicker1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phoneEdit"
+        android:layout_toRightOf="@+id/timePicker1"/>
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timePicker1"
+        android:text="@string/send"
+        />
+    <Button
+        android:id="@+id/callAheadCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timePicker1"
+        android:layout_toRightOf="@+id/sendButton"
+        android:text="@string/Cancel"
+        />
+    
+    
+
+</RelativeLayout>
